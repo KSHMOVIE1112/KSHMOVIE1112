@@ -1,9 +1,11 @@
 import requests
 import telegram
+import os
 from bs4 import BeautifulSoup
 from apscheduler.schedulers.blocking import BlockingScheduler
 
-bot = telegram.Bot(token='1468758362:AAHwqqfjg-EPz7PX9cbW-KUi8unTjruqZl4')
+access_token = os.environ["BOT_TOKEN"]
+bot = telegram.Bot(token='access_token')
 url = 'http://www.cgv.co.kr/common/showtimes/iframeTheater.aspx?areacode=01&theatercode=0013&date=20201205&screenratingcode=02'
 
 def job_function():
