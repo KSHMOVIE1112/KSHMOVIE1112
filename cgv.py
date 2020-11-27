@@ -4,10 +4,10 @@ import os
 from bs4 import BeautifulSoup
 from apscheduler.schedulers.blocking import BlockingScheduler
 
-access_token = os.environ["BOT_TOKEN"]
+access_token = os.environ['BOT_TOKEN']
 bot = telegram.Bot(token='access_token')
 
-access_cgv = os.environ["URL"]
+access_cgv = os.environ['URL']
 url = 'access_cgv'
 
 def job_function():
